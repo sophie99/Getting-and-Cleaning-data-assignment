@@ -1,10 +1,10 @@
-##This CodeBook describes how the Data in the "UCI HAR Dataset" have been processed and cleaned according to the course project assignments.
+This CodeBook describes how the Data in the "UCI HAR Dataset" have been processed and cleaned according to the course project assignments.
 
-#Data Source
+*Data Source
 
 The original dataset was acquired from: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip. Info concerning the original dataset:http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
-#Explanation of Scripts 
+**Explanation of Scripts 
 
 Assignment 1.The six txt files in train and test folder were imported as dataframes by using read.table function. Those dataframes were then combined with rbind() and cbind() function to generate a merged dataframe called "MergeAll".
 
@@ -17,7 +17,7 @@ Assignment 4. Some of the variable names were replaced with descriptive variable
 Assignment 5. With melt () cast() (reshape package) the data was summarized to display the mean for each subject and activity combination of all variables. Arrange the cleaned data The final set has 180 rows & 68 columns (tidy_data.txt). 
 
 
-#Tidy colnames:
+***Tidy colnames:
 
  [1] "Subject"                                                    
  [2] "ActivityLabels"                                             
